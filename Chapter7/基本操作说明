@@ -1,0 +1,18 @@
+//jar包下载地址：https://repo1.maven.org/maven2/com/github/dreamhead/moco-runner/1.1.0/
+
+//启动命令
+//http 协议
+//-p 指定端口号
+//-c json文件路径，可写相对路径
+java -jar ./moco-runner-1.1.0-standalone.jar http -p 8888 -c startup1.json
+
+
+//startupGet.json 文件中模拟了带参数和不带参数的get请求，文件更新后会热部署，直接重启。
+
+//startupPost.json 文件，post请求
+
+//startupWithCookies.json 带cookies的get和post请求，cookie除了设置带内容外，还必须填写域、路径
+
+//startupWithHeader.json 带header信息带请求
+
+//startupWithRedirect.json 实现请求重定向
